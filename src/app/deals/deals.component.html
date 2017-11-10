@@ -1,0 +1,110 @@
+<div class="deals_container">
+  <div class="col-md-9 form-area">
+    <ul class="nav nav-pills nav-justified">
+      <li class="active"><a href="#" style="background: #358EE0">Enter Deal Details</a></li>
+      <li><a href="#" style="background: #EEEEEE">Step2</a></li>
+      <li><a href="#" style="background: #EEEEEE">Step3</a></li>
+    </ul>
+    <form class="example-form">
+      <div class="col-md-4 partyinfo">
+        <md-select placeholder="Borrower">
+          <md-option>Borrower</md-option>
+        </md-select>
+        <md-select placeholder="Sponsor">
+          <md-option>Sponsor</md-option>
+        </md-select>
+        <md-select placeholder="Guarantor">
+          <md-option>Guarantor</md-option>
+        </md-select>
+        <md-select placeholder="Lead Arranger">
+          <md-option>Lead Arranger</md-option>
+        </md-select>
+        <md-select placeholder="Admin Agent">
+          <md-option>Admin Agent</md-option>
+        </md-select>
+      </div>
+      <div class="col-md-4 deal">
+        <md-form-field class="example-full-width">
+          <input mdInput placeholder="Name" value="">
+        </md-form-field>
+        <md-form-field class="example-full-width">
+          <input mdInput placeholder="Alias" value="">
+        </md-form-field>
+        <md-form-field class="example-full-width">
+          <input mdInput placeholder="URL" value="">
+        </md-form-field>
+        <md-form-field class="example-full-width">
+          <input mdInput placeholder="Short Code" value="">
+        </md-form-field>
+        <md-select placeholder="Type">
+          <md-option>Type</md-option>
+        </md-select>
+        <md-select placeholder="Purpose">
+          <md-option>Purpose</md-option>
+        </md-select>
+        <md-select placeholder="Use of Funds">
+          <md-option>Use of Funds</md-option>
+        </md-select>
+      </div>
+      <div class="col-md-4 date">
+        <md-select placeholder="Currency">
+          <md-option>Currency</md-option>
+        </md-select>
+        <md-form-field class="example-full-width">
+          <input mdInput placeholder="Amount" value="">
+        </md-form-field>
+        <md-form-field class="example-full-width">
+          <input mdInput [mdDatepicker]="picker1" placeholder="Start Date">
+          <md-datepicker-toggle mdSuffix [for]="picker1"></md-datepicker-toggle>
+          <md-datepicker #picker1></md-datepicker>
+        </md-form-field>
+        <md-form-field>
+          <input mdInput [mdDatepicker]="picker2" placeholder="Closing Data">
+          <md-datepicker-toggle mdSuffix [for]="picker2"></md-datepicker-toggle>
+          <md-datepicker #picker2></md-datepicker>
+        </md-form-field>
+        <md-form-field>
+          <input mdInput [mdDatepicker]="picker3" placeholder="Agreement Date">
+          <md-datepicker-toggle mdSuffix [for]="picker3"></md-datepicker-toggle>
+          <md-datepicker #picker3></md-datepicker>
+        </md-form-field>
+      </div>
+      <div class="col-md-12 deal-notes">
+        <div class="panel panel-default">
+          <div class="panel-heading">Deal Notes</div>
+          <textarea class="form-control" placeholder="Enter brief description about Deal" rows="5"></textarea>
+        </div>
+        <div class="col-md-2 save-close">
+          <button md-raised-button style="background: #358EE0; color: #FFFFFF">Save & Close</button>
+        </div>
+        <div class="col-md-7 cancel">
+          <button md-raised-button style="background: #EEEEEE; color: black">Cancel</button>
+        </div>
+        <div class="col-md-3 next">
+          <button md-raised-button style="background: #358EE0; color: #FFFFFF; float: right">Next</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-3 upload_label">
+    <p>Upload Logos</p>
+  </div>
+  <div class="col-md-3 drag-drop-area" [dragDirective]='item' [dragHightlight]="'highlight'" (releaseDrop)="releaseDrop($event)"
+    (startDrag)="startDrag(item)">
+    <div class="circle">
+      <span class="glyphicon glyphicon-cloud-upload circle-icon" style="font-size: 50px;"></span>
+    </div>
+    <p>Multiples files drag here</p>
+  </div>
+  <div class="col-md-3 btn_contact">
+    <button type="button" class="btn btn-block btn-file"><span class="glyphicon glyphicon-cloud-upload" style="font-size:15px"></span><span class="fileupload-new">Upload</span></button>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Contact</div>
+      <textarea class="form-control" rows="5"></textarea>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p>2017 @Iorem Ipsum Iorem Ipsum</p>
+</div>

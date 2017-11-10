@@ -1,0 +1,88 @@
+.deals_container {
+    padding: 20px;
+    width: 95%;
+    height: 85vh;
+    margin: 5% 3% 3% 3%;
+    background-color: #FFFFFF;
+}
+.footer {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+.partyinfo, .date {
+  padding: 5px;
+}
+.deal {
+  padding: 22px;
+}
+.deal > md-select {
+  width: 100%;
+  margin: 5px 0px;
+}
+.deal > md-form-field {
+  width: 100%;
+}
+.partyinfo> md-select, .date > md-select {
+   width: 100%;
+   margin: 10px 0px;
+}
+.date > md-form-field {
+  width: 100%;
+  margin: 5px 0px;
+}
+.btn-danger {
+  float: right;
+}
+.drag-drop-area {
+  height: 400px;
+  background: #EEEEEE;
+}
+.drag-drop-area > p {
+  font-size: 28px;
+  text-align: center;
+}
+.upload_label {
+  margin-top: 5px; 
+  font-size: 28px;
+}
+.btn_contact {
+  margin-top: 10px;
+  padding: 0;
+}
+.panel {
+  margin-top: 20px;;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 50%;
+  margin-top: 100px;
+  margin-left: -50px;
+  border-radius: 50%;
+  background: #E6E6E6;
+}
+.glyphicon-cloud-upload{
+  margin: 5px;
+}
+.circle-icon {
+  margin: 0;
+  padding: 25px;
+}
+.btn-block, .panel-heading{
+  background: #358EE0;
+  color: #FFFFFF;
+}
+.nav-pills > li > a {
+  font-size: 32px;
+  border-radius: 20%;
+}
+li ~ a {
+  margin: 2px;
+}
+.next, .save-close {
+  padding: 0;
+}
